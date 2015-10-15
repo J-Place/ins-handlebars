@@ -1,0 +1,15 @@
+<!--<script id="header" type="text/x-handlebars-template">​-->
+
+<div class="slider">
+ {{#each slides}} // Note the reference to the customers object​
+    <div class="slide__content">
+        <h2> {{ title }} </h2>​
+        <p>{{ description }}</p>
+    </div>
+    <div class="slide__image">
+        <img src="site/assets/img/{{imageName}}.jpg" alt="{{imageAlt}}" />
+    </div>
+{{/each}}
+​</div>
+
+<!-- </script> -->

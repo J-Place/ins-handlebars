@@ -1,0 +1,87 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Insignia Bank</title>
+    <meta name="description" content="Insignia Bank - Your Community Bank - Sarasota, Bradenton">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.3/handlebars.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,300,700,100">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+<!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <div class="header">
+
+    <h1 class="header__container--logo">
+      <img class="header--logo" src="/assets/img/insignia-bank-logo.png"/>
+    </h1>
+
+    <div class="header__container--login">
+      <p class="login__label">Login to<br>INTERNET BANKING</p>
+      <input type="text" class="login__input" value="Username">
+      <button class="login__button">Login</button>
+      <a href="" class="login__accounts">View All Logins</a>
+    </div>
+
+    <nav class="header__container--nav">
+      <ul class="nav__list">
+        <li class="nav__list--item"><a href="#" class="">Personal</a></li>
+        <li class="nav__list--item"><a href="#" class="">Business</a></li>
+        <li class="nav__list--item"><a href="#" class="">Lending</a></li>
+        <li class="nav__list--item"><a href="#" class="">Investments</a></li>
+        <li class="nav__list--item"><a href="#" class="">Online Services</a></li>
+        <li class="nav__list--item"><a href="#" class="">Hours & Locations</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div id="slider" class="slider"></div>
+  <script id="sliderTemplate" type="text/x-handlebars-template">
+    {{#slides}}
+      <div class="slide">
+        <div class="slide__content">
+            <h1 class="slide__content--title">{{title}}</h1>
+            <h3 class="slide__content--subtitle">{{description}}</h3>
+            <a href="" class="button--cta">{{buttonText}}</a>
+        </div>
+        <div class="slide__image">
+          <img src="assets/img/{{imageName}}.jpg">
+        </div>
+      </div>
+    {{/slides}}
+  </script>
+
+  <div id="feature" class="feature"></div>
+  <script id="featureTemplate" type="text/x-handlebars-template">
+    {{#features}}
+      <div class="feature">
+        <a href="" class="feature__link">
+          <img src="assets/img/{{imageName}}.jpg" class="feature__icon">
+          <h3 class="feature__title"></h3>
+          <p class="feature__text"></p>
+        </a>
+      </div>
+    {{/features}}
+  </script>
+
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/data/slides.js"></script>
+<script src="assets/data/features.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

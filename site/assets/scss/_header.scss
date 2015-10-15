@@ -1,0 +1,125 @@
+.header {
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 40, 46, 0.9);
+    position: absolute;
+    z-index: 999;
+}
+
+
+// Logo Container
+
+.header__container--logo {
+    height: 100px;
+    position: absolute;
+    margin: 0;
+    left: 30px;
+}
+
+.header--logo {
+    max-width: 270px;
+    position: relative;
+    top: 50%;
+    left: -9px; // Adjust for logo drop shadow offset
+    transform: translate(0, -50%);
+}
+
+
+// Login Container
+
+.header__container--login {
+    top: 19px;
+    right: 30px;
+    position: absolute;
+}
+
+.login__label, .login__input, .login__button, .login__accounts {
+    float: left;
+}
+
+.login__label {
+    font-size: 0.6em;
+    line-height: 1.4em;
+    color: #739A60;
+    opacity: 0.5;
+    width: 140px;
+    margin: -2px 0 2px 0;
+    padding: 0;
+    text-align: right;
+}
+
+.login__input {
+    height: 23px;
+    width: 130px;
+    margin: 0 0.8em;
+    padding: 0 .5em;
+    border: 0 none;
+    font-size: 0.8em;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    color: rgba(0,0,0,1.0);
+    background-color: rgba(255,255,255,0.25);
+    border-radius: 2px;
+}
+
+.login__button {
+    height: 23px;
+    line-height: 20px;
+    border-radius: 12px;
+    padding: 0 .8em;
+    font-size: 0.6em;
+    font-weight: 300;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1.0);
+    background-color: #256271;
+    opacity: 0.5;
+}
+
+.login__accounts {
+    color: #357180;
+    font-size: 0.72em;
+    line-height: 23px;
+    margin-left: 15px;
+    padding-left: 15px;
+    text-decoration: none;
+    border-left: 1px dashed #a3a3a3;
+}
+
+
+// Nav Container
+
+.header__container--nav {
+    top: 60px;
+    right: 30px;
+    position: absolute;
+}
+
+.nav__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__list--item {
+    height: auto;
+    float: left;
+    margin: 0 0 0 1.5em;
+}
+
+.nav__list--item a {
+    color: #FFF;
+    opacity: 0.6;
+    font-size: 0.72em;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.nav__list--item a:hover {
+    color: #3EC9FF;
+}

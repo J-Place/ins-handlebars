@@ -1,0 +1,17 @@
+@import 'global';
+@import 'mixins';
+@import 'typography';
+@import 'header';
+@import 'footer';
+@import 'slider';
+@import 'forms';
+@import 'buttons';
+
+
+
+.fullWidth {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
